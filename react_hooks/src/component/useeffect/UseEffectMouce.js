@@ -4,18 +4,18 @@ function UseEffectMouce() {
 
     const [coordinate, setCoordinate] = useState({x: 0, y : 0})
 
-    const logMousePosition = e => {
+    const logMouseXYPosition = (e) => {
         console.log('Mount Mouce Event ')
         setCoordinate({...coordinate, x: e.clientX, y: e.clientY })
     }
 
     useEffect(() => {
         console.log("[UseEffectMouce] use effect called. ")
-        window.addEventListener('mousemove', logMousePosition)
+        window.addEventListener('mousemove', logMouseXYPosition)
 
         return () => {
             console.log('Unmount Mouce Event')
-            window.removeEventListener('mousemove', logMousePosition)
+            window.removeEventListener('mousemove', logMouseXYPosition)
         }
     }, [])
 

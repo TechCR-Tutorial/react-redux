@@ -1,10 +1,10 @@
-#### Important Notes:
+## Important Notes:
 ```
 Dont call hooks inside loops, conditions or nested functions. 
 call them from with in react functional component and not just any regular java script functions
 ```
 
-#### useState Notes
+## useState Notes
 ```
 useState hookd for mange state inside functional component. 
 useState hook return an array with two elements. 
@@ -24,7 +24,7 @@ When use object or array, make sure to spread state variable and then call the s
 
 ```
 
-#### useEffect Notes
+## useEffect Notes
 ```
 useEffect hook for perfom side effects in functional components. 
 as replacement for componentDidMount, compoentnDidUpdate, componentWillUnmount.
@@ -47,4 +47,16 @@ execute componentWillUnmount via useEffect.
 for that need to add return function into useEffect method. 
 Ex : UseEffectMouce.js - - useEffect. (remove return claue and you can see logs even you move to another menu. listner not detach from window. )
 
+```
+#### Use effect IM:
+```
+For haing more than one prop change you can use multile useEffect hooks for code seperations. 
+```
+
+#### Use effect fetch
+```
+Ex : UseEffectFetchList (here you can see empty dependcy array for avoid fetch repeatly. )
+
+Ex : UseEffectFetchByID - useEffect for id - remove id form dependacy list and check. even input change data wont fetch. 
+    can see multiple useEffect for different dependies. 
 ```
