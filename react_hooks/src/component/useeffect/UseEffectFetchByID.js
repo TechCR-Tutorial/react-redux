@@ -22,7 +22,7 @@ function UseEffectFetchByID() {
 
     useEffect(() => {
         console.log('useEffect - fetch by button click id ...')
-        axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
             .then(response => {
                 console.log(response)
                 setPost(response.data)

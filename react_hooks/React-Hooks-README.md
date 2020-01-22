@@ -60,3 +60,15 @@ Ex : UseEffectFetchList (here you can see empty dependcy array for avoid fetch r
 Ex : UseEffectFetchByID - useEffect for id - remove id form dependacy list and check. even input change data wont fetch. 
     can see multiple useEffect for different dependies. 
 ```
+
+## useContext Notes
+```
+Context provide way to pass data through component tree without pass down manually at every level as props. 
+
+Context creating and providing is same in both with hooks and without hooks. 
+Ex ; ContextComponent 
+Noraml usage of Context : ContextComponentC
+
+useContext hooks usage : UseContext.js
+
+```

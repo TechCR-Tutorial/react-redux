@@ -12,6 +12,12 @@ provide store to Provider via provider store props
 ```
 This is need to learn. 
 selectors - aggreate state with mapStateToProps 
+
+Specially selectors can use to avoid execute re calcuate for any rendering. 
+specially when, not related propery change for calcualtion. 
+it keep state in memory. 
+https://redux.js.org/recipes/computing-derived-data/?_sm_au_=iRV54M4QNsNQLvM6ML8tvK34L00HF
+
 ```
 
 # Connect
