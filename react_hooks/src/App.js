@@ -6,6 +6,10 @@ import UseEffectComponent from './component/useeffect/UseEffectComponent';
 import './bootstrap.css'
 import UseEffectFetchComponent from './component/useeffect/UseEffectFetchComponent';
 import ContextComponent from './component/usecontext/ContextComponent';
+import UseReducerComponent from './component/usereducer/UseReducerComponent';
+import UseCallbackComponent from './component/usecallback/UseCallbackComponent';
+import UseMemoComponent from './component/usememo/UseMemoComponent';
+import UseRefComponent from './component/useref/UseRefComponent';
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
               {<li><Link className="nav-link" to="/useEffect"> Use Effect </Link></li>}
               {<li><Link className="nav-link" to="/useEffectFetch"> Use Effect Fetch </Link></li>}
               {<li><Link className="nav-link" to="/useContext"> Use Context </Link></li>}
+              {<li><Link className="nav-link" to="/useReducer"> Use Reducer </Link></li>}
+              {<li><Link className="nav-link" to="/useCallback"> Use Callback </Link></li>}
+              {<li><Link className="nav-link" to="/useMemo"> Use Memo </Link></li>}
+              {<li><Link className="nav-link" to="/useRef"> Use Ref </Link></li>}
             </ul>
           </nav>
         </header>
@@ -26,6 +34,10 @@ function App() {
           <Route path="/useEffect" exact component={UseEffectComponent} />
           <Route path="/useEffectFetch" exact component={UseEffectFetchComponent} />
           <Route path="/useContext" exact component={ContextComponent} />
+          <Route path="/useReducer" exact component={UseReducerComponent} />
+          <Route path="/useCallback" exact component={UseCallbackComponent} />
+          <Route path="/useMemo" exact component={UseMemoComponent} />
+          <Route path="/useRef" exact component={UseRefComponent} />
         </Switch>
       </Router>
     </div>
