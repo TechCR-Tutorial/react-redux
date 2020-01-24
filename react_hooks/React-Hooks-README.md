@@ -157,4 +157,8 @@ UseRefComponent / UseRefConstant
 should start with use
 custom hook can call other hooks also  
 
+Document title update : CustomHookDocumentTitleComponent / useDocumentTitle
+
+Counter : CustomHookCounterComponent / useCounter ( this should extend to pass value to increment)
+
 ```

@@ -10,6 +10,7 @@ import UseReducerComponent from './component/usereducer/UseReducerComponent';
 import UseCallbackComponent from './component/usecallback/UseCallbackComponent';
 import UseMemoComponent from './component/usememo/UseMemoComponent';
 import UseRefComponent from './component/useref/UseRefComponent';
+import CustomHooksComponent from './component/customhooks/CustomHooksComponent';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               {<li><Link className="nav-link" to="/useCallback"> Use Callback </Link></li>}
               {<li><Link className="nav-link" to="/useMemo"> Use Memo </Link></li>}
               {<li><Link className="nav-link" to="/useRef"> Use Ref </Link></li>}
+              {<li><Link className="nav-link" to="/customHook"> Custom Hooks </Link></li>}
             </ul>
           </nav>
         </header>
@@ -38,6 +40,7 @@ function App() {
           <Route path="/useCallback" exact component={UseCallbackComponent} />
           <Route path="/useMemo" exact component={UseMemoComponent} />
           <Route path="/useRef" exact component={UseRefComponent} />
+          <Route path="/customHook" exact component={CustomHooksComponent} />
         </Switch>
       </Router>
     </div>
